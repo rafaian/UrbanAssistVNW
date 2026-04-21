@@ -71,10 +71,11 @@ margin-bottom:20px;
 .bloco
 {
 background:white;
-padding:20px;
+padding:10px;
 border-radius:10px;
 box-shadow:0 2px 8px rgba(0,0,0,0.08);
 margin-bottom:30px;
+text-align: center;
 }
 
 .form-linha
@@ -85,28 +86,76 @@ margin-top:15px;
 flex-wrap:wrap;
 }
 
-.remover{
+.remover
+{
 background:#dc2626;
 }
 
-.remover:hover{
+.remover:hover
+{
 background:#b91c1c;
 }
 
-h3{
+h3
+{
 margin-bottom:10px;
 color:#1e3a5f;
 }
 
-.bairro{
+.bairro
+{
 color:#555;
 }
 
-.vagas{
+.vagas
+{
 display:inline-block;
 background:#dbeafe;
 padding:8px 12px;
 border-radius:20px;
 font-weight:bold;
 margin-top:10px;
+}
+
+.vagas
+{
+display:inline-block;
+background:#dbeafe;
+padding:8px 12px;
+border-radius:20px;
+font-weight:bold;
+margin-top:10px;
+margin-right:12px;
+}
+
+input
+{
+padding:12px;
+width:180px;
+}
+____________________________________________________
+footer
+{
+max-width:900px;
+margin:60px;
+text-align:center;
+}
+____________________________________________________
+header
+{
+text-align:center;
+margin-bottom:40px;
+padding:30px 20px;
+}
+
+header h1
+{
+font-size:38px;
+margin-bottom:10px;
+}
+
+header p
+{
+color:#666;
+font-size:18px;
 }
