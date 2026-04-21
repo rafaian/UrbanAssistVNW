@@ -1,21 +1,59 @@
-🌊 UrbanAssist
+## UrbanAssist
 
-📌 Sobre o projeto
+## 📌 Sobre o projeto
 
-**UrbanAssist** é uma API desenvolvida para fins academicos a ideia do projeto é ajudar pessoas em situações de enchentes e 
-alagamentos a encontrar **abrigos próximos** com informações úteis e atualizadas.
+**UrbanAssist** é uma aplicação full stack desenvolvida para fins acadêmicos. A ideia do projeto é ajudar pessoas em situações de enchentes e alagamentos a encontrar **abrigos próximos** com informações úteis e atualizadas.
 
 O foco do projeto é oferecer uma solução simples e eficiente para:
 
-* Localizar abrigos disponíveis
-* Consultar vagas disponíveis
-* Buscar abrigos por bairro
-* Atualizar ocupação dos abrigos
+* Localizar abrigos disponíveis  
+* Consultar vagas disponíveis  
+* Buscar abrigos por bairro  
+* Atualizar ocupação dos abrigos  
 * Gerenciar cadastro de abrigos
 
 ---
 
-🚀 Tecnologias utilizadas
+## 🧩 Problema escolhido
+
+Dificuldade na organização das informações sobre abrigos emergenciais.
+
+Problemas identificados:
+
+* Falta de controle sobre vagas disponíveis  
+* Dificuldade em localizar abrigos por região  
+* Informações descentralizadas  
+* Atualização manual e pouco eficiente dos dados
+
+Pessoas impactadas:
+
+* Famílias desalojadas  
+* Equipes de apoio e voluntários  
+* Agentes públicos responsáveis pela gestão da crise
+
+Identificado um problema, relevante no sentido de que pessoas já estão em uma situação difícil e prejudica ainda mais de ir até o local e não ter vagas para se alojarem.
+
+---
+
+## 💡 Solução proposta
+
+O **UrbanAssist** centraliza informações dos abrigos em um único sistema.
+
+A solução permite:
+
+* Cadastrar abrigos
+* Registrar endereço e telefone
+* Controlar capacidade e vagas
+* Buscar abrigos por bairro
+* Remover registros quando necessário
+
+Principal diferencial:
+
+Unir cadastro, consulta e atualização das vagas em uma solução simples e funcional para cenários emergenciais.
+
+---
+
+## 🚀 Tecnologias utilizadas
 
 ### Backend
 
@@ -24,7 +62,7 @@ O foco do projeto é oferecer uma solução simples e eficiente para:
 * SQLite
 * Postman
 
-### (Próxima etapa)
+### Frontend
 
 * React
 * Axios
@@ -32,7 +70,7 @@ O foco do projeto é oferecer uma solução simples e eficiente para:
 
 ---
 
-⚙️ Funcionalidades
+## ⚙️ Funcionalidades
 
 ### CRUD de abrigos
 
@@ -62,7 +100,7 @@ DELETE /abrigos/:id
 
 ---
 
-🔎 Busca por bairro
+## 🔎 Busca por bairro
 
 ```http
 GET /buscar?bairro=Centro
@@ -72,7 +110,7 @@ Retorna apenas os abrigos do bairro informado.
 
 ---
 
-🗄 Estrutura do banco
+## 🗄 Estrutura do banco
 
 Tabela:
 
@@ -94,7 +132,7 @@ telefone
 
 ---
 
-🧪 Exemplo de cadastro
+## 🧪 Exemplo de cadastro
 
 ```json
 {
@@ -109,7 +147,9 @@ telefone
 
 ---
 
-▶️ Como executar
+## ▶️ Como executar
+
+### Backend
 
 Instalar dependências:
 
@@ -131,16 +171,45 @@ http://localhost:3000
 
 ---
 
-📁 Estrutura do projeto
+### Frontend
+
+Instalar dependências:
 
 ```bash
-backend/
-├── server.js
-├── database.js
-├── database.db
-├── package.json
+npm install
+```
+
+Rodar aplicação:
+
+```bash
+npm run dev
+```
+
+Aplicação:
+
+```bash
+http://localhost:5173
 ```
 
 ---
 
+## 📁 Estrutura do projeto
 
+```bash
+UrbanAssist/
+├── backend/
+│   ├── server.js
+│   ├── database.js
+│   └── package.json
+│
+├── frontend/
+│   ├── src/
+│   ├── public/
+│   └── package.json
+│
+└── README.md
+```
+
+---
+
+## Desenvolvido por : Rafael Serafim
