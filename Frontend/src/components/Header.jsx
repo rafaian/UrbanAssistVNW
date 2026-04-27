@@ -1,12 +1,16 @@
-function Header() {
+function Header(){
 
-return (
+return(
 
 <header>
 
-<h1>UrbanAssist</h1>
+<div className="logo">🛟 UrbanAssist</div>
 
-<p>Gestão de Abrigos Emergenciais</p>
+<nav>
+<button>Início</button>
+<button>Cadastro de Abrigos</button>
+<button>Login</button>
+</nav>
 
 </header>
 
